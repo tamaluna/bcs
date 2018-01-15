@@ -8,7 +8,23 @@ angular.module('myApp', [
   'myApp.version'
 ])
 	.config(['$routeProvider', function($routeProvider) {
-		$routeProvider.otherwise({redirectTo: '/view1'});
+		$routeProvider
+			.when('/main', {
+				templateUrl: 'main.html'/*,
+				controller: 'FirstController'*/
+			})
+			.when('/contact', {
+				templateUrl: 'contact.html'/*,
+				controller: 'SecondController'*/
+			})
+			.when('/quote', {
+				templateUrl: 'quote.html'/*,
+				controller: 'SecondController'*/
+			})
+			.when('/about', {
+				templateUrl: 'about.html'
+			})
+			.otherwise({redirectTo: '/main'});
 	}])
 
 	.controller('BCSCarouselCtrl', function ($scope) {

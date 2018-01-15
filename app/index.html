@@ -19,20 +19,22 @@
     <script src="https://cdn.rawgit.com/h5bp/html5-boilerplate/master/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-static-top navbar-light bg-faded" style="margin-bottom: 0px">
+<nav class="navbar navbar-static-top navbar-light bg-faded" style="margin-bottom: 0px; background-color: lightblue">
     <a href="#" class="navbar-brand" style="padding: 0px"><img src="img/BCS%20logo%202.gif" height="150" width="375"></a>
     <ul class="nav navbar-nav">
         <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#main">Home <span class="sr-only">(current)</span></a>
+        </li>
+				<!--
+        <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+        </li>
+				-->
+        <li class="nav-item">
+            <a class="nav-link" href="#quote">Request a Quote</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Request a Quote</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#about">About Us</a>
         </li>
     </ul>
 </nav>
@@ -40,222 +42,9 @@
     <!--<li><a href="#/view1">view1</a></li>-->
     <!--<li><a href="#/view2">view2</a></li>-->
   <!--</ul>-->
-
-  <div style="position: absolute; top: 0; left: 0; z-index: 10;">
-      <!--<img src="img/BCS%20logo%202.gif" height="150" width="375">-->
-  </div>
-  <div ng-controller="BCSCarouselCtrl" class="carousel">
-      <div style="height: auto">
-          <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
-              <uib-slide ng-repeat="slide in slides" active="slide.active" index="slide.id">
-                  <img class="center-block" ng-src="{{slide.image}}">
-                  <div class="carousel-caption">
-                      <h3 style="color:orange">{{slide.text}}</h3>
-                  </div>
-              </uib-slide>
-          </uib-carousel>
-      </div>
-  </div>
-
-<!-- Testimonials -->
-<div class="row">
-    <div class="col-md-12">
-        <div class="carousel slide" data-ride="carousel" id="quote-carousel" style="margin-bottom: 60px;" data-interval="9000">
-
-            <!-- Bottom Carousel Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
-                <li data-target="#quote-carousel" data-slide-to="1"></li>
-                <li data-target="#quote-carousel" data-slide-to="2"></li>
-            </ol>
-
-            <!-- Carousel Slides / Quotes -->
-            <div class="carousel-inner">
-
-                <!-- Quote 1 -->
-                <div class="item active">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <p><span class="extra-large">&ldquo;</span><span style="font-size: 60px">&ldquo;</span> Beach Cities Solar was professional, efficient, trustworthy and a company I would strongly
-                                recommend if you are thinking about obtaining Solar Panels!&rdquo;</p>
-                            <small><strong>George D., Rancho Palos Verdes</strong></small>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Quote 2 -->
-                <div class="item">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <p><bold>&ldquo;</bold>We got 6 estimates to include some of the highly advertised companies ...
-                                Take my advice and save yourself a lot of time and trouble, just skip the estimates ...
-                                [Beach Cities' price] blew away ALL competitors by thousands of dollars&rdquo;</p>
-                            <small><strong>James S., Diamond bar</strong></small>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Quote 3 -->
-                <div class="item">
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <p><bold>&ldquo;</bold>I give this an A PLUS rating. [Beach Cities Solar] walks you through the process ...
-                                Everything is running fine and very happy with my new SCE bill.&rdquo;</p>
-                            <small><strong>Melanie H., Lomita</strong></small>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-</div>
-
-  <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-  <![endif]-->
-
-  <!--<div ng-view></div>-->
-  <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-          <div class="col-lg-4">
-              <img class="img-circle" src="img/B.jpg" alt="Beach" width="140" height="140">
-              <h2>Generate</h2>
-              <p>When the sun is shining, you create your own energy!  Your system produces enough energy to power your home, pool, electric car, etc., for the whole day.</p>
-              <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-              <img class="img-circle" src="img/C.jpg" alt="Cities" width="140" height="140">
-              <h2>Store</h2>
-              <p>Surplus energy you produce goes to the electric utility's grid.  They buy it from you during the day; you buy it back at night.</p>
-              <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
-              <img class="img-circle" src="img/S.jpg" alt="Solar" width="140" height="140">
-              <h2>Win</h2>
-              <p>You do not buy electricity from your solar provider:  you own your system! &nbsp;You are free to spend your money on home improvements, investments, or whatever you want!</p>
-              <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
-          </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
+	<div ng-view></div>
 
 
-        <!-- End testimonials - ->
-      <div class="carousel slide" data-ride="carousel" id="quote-carousel">
-          <!-- Bottom Carousel Indicators - ->
-          <ol class="carousel-indicators">
-              <li data-target="#quote-carousel" data-slide-to="0" class=""><img class="img-responsive " src="https://s3.amazonaws.com/uifaces/faces/twitter/brad_frost/128.jpg" alt="">
-              </li>
-              <li class="active" data-target="#quote-carousel" data-slide-to="1"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/rssems/128.jpg" alt="">
-              </li>
-              <li class="" data-target="#quote-carousel" data-slide-to="2"><img class="img-responsive" src="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg" alt="">
-              </li>
-          </ol>
-
-          <!-- Carousel Slides / Quotes - ->
-          <div class="carousel-inner text-center">
-
-              <div class="item">
-                  <blockquote>
-                      <div class="row">
-                          <div class="col-sm-8 col-sm-offset-2">
-                              <p>I received several calls from companies I turned down after obtaining Tony's services
-                                  and they ALL could not believe the price I was paying ... &nbsp;I got a great product
-                                  from a great guy at an incredible price.&nbsp; These were top name panels ... &nbsp;See
-                                  Tony and save the hassle of dealing with the solar industry version of car salesmen
-                                  when you buy a car.</p>
-                              <small>James S., Diamond Bar</small>
-                          </div>
-                      </div>
-                  </blockquote>
-              </div>
-              <div class="item active">
-                  <blockquote>
-                      <div class="row">
-                          <div class="col-sm-8 col-sm-offset-2">
-                              <p>I give this an A PLUS rating.&nbsp; Tony walks you thru the process which is 5 different
-                                  phases to go thru.&nbsp; Everything is running fine and very happy with my new SCE bill.</p>
-                              <small>Melanie H., Lomita</small>
-                          </div>
-                      </div>
-                  </blockquote>
-              </div>
-              <div class="item">
-                  <blockquote>
-                      <div class="row">
-                          <div class="col-sm-8 col-sm-offset-2">
-                              <p>Beach Cities Solar was Professional, Efficient, Trustworthy and a company I would strongly
-                                  recommend ...&nbsp; Original construction estimates and completion timetable were met
-                                  with no surprises!&nbsp; Beach Cities Solar explained thoroughly every step and I was
-                                  especially pleased with the quality of the panels and service.&nbsp; We have received
-                                  so many compliments from family, friends and neighbors!&nbsp; Thank you Beach Cities Solar!!!!!</p>
-                              <small>George D., Rancho Palos Verdes</small>
-                          </div>
-                      </div>
-                  </blockquote>
-              </div>
-          </div>
-
-          <!-- Carousel Buttons Next/Prev - ->
-          <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
-          <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
-      </div>
-
-      <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider" style="margin-top: 40px; margin-bottom: 40px;">
-
-      <div class="row featurette" style="height: auto">
-          <div class="col-md-7">
-              <h2 class="featurette-heading" style="margin-top: 10px;">Serving all of Southern California.<br>
-                  <span class="text-muted">Residential & Commercial.</span></h2>
-              <p class="lead">With personal attention, technical expertise, and prompt service.</p>
-          </div>
-          <div class="col-md-5">
-              <img class="featurette-image img-responsive center-block" src="img/SoCalGreenWithBldgs.jpg" alt="SoCal Commercial & Residential">
-          </div>
-      </div>
-
-      <hr class="featurette-divider" style="margin-top: 40px; margin-bottom: 40px;">
-
-      <div class="row featurette" style="height: auto">
-          <div class="col-md-7 col-md-push-5">
-              <h2 class="featurette-heading" style="margin-top: 10px;">Ask for a free estimate.<br>
-                  <span class="text-muted">See for yourself.</span></h2>
-              <p class="lead">Find out how owning your own system keeps more of your money where it belongs &mdash; with you!</p>
-          </div>
-          <div class="col-md-5 col-md-pull-7">
-              <img class="featurette-image img-responsive center-block" src="img/PiggyBank.jpg" height="280px" width="280px" alt="Keep your money">
-          </div>
-      </div>
-
-      <hr class="featurette-divider" style="margin-top: 40px; margin-bottom: 40px;">
-
-      <div class="row featurette" style="height: auto; display: table-cell; vertical-align: middle">
-          <div class="col-md-6">
-              <h2 class="featurette-heading" style="margin-top: 10px;">We're a full-service shop.<br>
-                  <span class="text-muted">We do it all.</span></h2>
-              <p class="lead">System Sizing<br>
-                  Grid-Tie Approval<br>
-                  Rebate Filing<br>
-                  Building Permit<br>
-                  Installation<br>
-                  Training<br>
-                  Monitoring<br>
-                  Repairs<br>
-                  Financing Available</p>
-          </div>
-          <div class="col-md-6">
-              <img class="featurette-image img-responsive center-block" src="img/Handshake.jpg"
-                   alt="Everything from soup to nuts" height="350px" width="350px">
-          </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
       <div style="text-align: center">
           <a class="frhzbus" href="http://www.bbb.org/losangelessiliconvalley/business-reviews/solar-energy-system-design-and-installation/beach-cities-solar-in-rancho-palos-verdes-ca-629953#bbbseal"
              title="Beach Cities Solar Inc, Solar Energy System Design & Installation, Rancho Palos Verdes, CA"
@@ -271,58 +60,11 @@
       <!-- FOOTER -->
       <footer>
           <p class="pull-right"><a href="#">Back to top</a></p>
-          <p>&copy; 2015 Beach Cities Solar, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+          <p>&copy; 2015 Beach Cities Solar, Inc. &middot; <!--<a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>-->
       </footer>
 
   </div>
 
-<div id="gridSystemModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="gridModalLabel">Modal title</h4>
-            </div>
-            <div class="modal-body">
-                <div class="container-fluid bd-example-row">
-                    <div class="row">
-                        <div class="col-md-4">.col-md-4</div>
-                        <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
-                        <div class="col-md-2 col-md-offset-4">.col-md-2 .col-md-offset-4</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-9">
-                            Level 1: .col-sm-9
-                            <div class="row">
-                                <div class="col-xs-8 col-sm-6">
-                                    Level 2: .col-xs-8 .col-sm-6
-                                </div>
-                                <div class="col-xs-4 col-sm-6">
-                                    Level 2: .col-xs-4 .col-sm-6
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="bd-example bd-example-padded-bottom">
-    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#gridSystemModal">
-        Launch demo modal
-    </button>
-</div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>

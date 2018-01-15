@@ -1,0 +1,150 @@
+  <div ng-controller="BCSCarouselCtrl" class="carousel">
+      <div style="height: auto">
+          <uib-carousel interval="myInterval" no-wrap="noWrapSlides">
+              <uib-slide ng-repeat="slide in slides" active="slide.active" index="slide.id">
+                  <img class="center-block" ng-src="{{slide.image}}" />
+                  <div class="carousel-caption">
+                      <h3 style="color:orange">{{slide.text}}</h3>
+                  </div>
+              </uib-slide>
+          </uib-carousel>
+      </div>
+  </div>
+
+<!-- Testimonials -->
+<div class="row" style="margin-top: 20px">
+    <div class="col-md-12">
+		    
+        <div class="carousel slide" data-ride="carousel" id="quote-carousel"
+				     style="margin-bottom: 40px;" data-interval="9000">
+
+            <!-- Bottom Carousel Indicators -->
+            <ol class="carousel-indicators" style="bottom: -40px">
+                <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#quote-carousel" data-slide-to="1"></li>
+                <li data-target="#quote-carousel" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Carousel Slides / Quotes -->
+            <div class="carousel-inner" style="margin-bottom: 60px">
+
+                <!-- Quote 1 -->
+                <div class="item active">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><span style="font-size: 60px">&ldquo;&nbsp;</span> Beach Cities Solar was professional, efficient, trustworthy and a company I would strongly
+                                recommend if you are thinking about obtaining Solar Panels!&rdquo;</p>
+                            <small><strong>George D., Rancho Palos Verdes</strong></small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quote 2 -->
+                <div class="item">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><span style="font-size: 60px">&ldquo;&nbsp;</span>We got 6 estimates to include some of the highly advertised companies ...
+                                Take my advice and save yourself a lot of time and trouble, just skip the estimates ...
+                                [Beach Cities' price] blew away ALL competitors by thousands of dollars&rdquo;</p>
+                            <small><strong>James S., Diamond bar</strong></small>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quote 3 -->
+                <div class="item">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <p><span style="font-size: 60px">&ldquo;&nbsp;</span>I give this an A PLUS rating. [Beach Cities Solar] walks you through the process ...
+                                Everything is running fine and very happy with my new SCE bill.&rdquo;</p>
+                            <small><strong>Melanie H., Lomita</strong></small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <!--<div ng-view></div>-->
+  <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+          <div class="col-lg-4">
+              <img class="img-circle" src="img/B.jpg" alt="Beach" width="140" height="140" />
+              <h2>Generate</h2>
+              <p>When the sun is shining, you create your own energy!  Your system produces enough energy to power your home, pool, electric car, etc., for the whole day.</p>
+              <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+              <img class="img-circle" src="img/C.jpg" alt="Cities" width="140" height="140" />
+              <h2>Store</h2>
+              <p>Surplus energy you produce goes to the electric utility's grid.  They buy it from you during the day; you buy it back at night.</p>
+              <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+              <img class="img-circle" src="img/S.jpg" alt="Solar" width="140" height="140" />
+              <h2>Win</h2>
+              <p>You do not buy electricity from your solar provider:  you own your system! &nbsp;You are free to spend your money on home improvements, investments, or whatever you want!</p>
+              <!--<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>-->
+          </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+
+      <hr class="featurette-divider" style="margin-top: 40px; margin-bottom: 40px;">
+
+      <div class="row featurette" style="height: auto">
+          <div class="col-md-7">
+              <h2 class="featurette-heading" style="margin-top: 10px;">Serving all of Southern California.<br>
+                  <span class="text-muted">Residential & Commercial.</span></h2>
+              <p class="lead">With personal attention, technical expertise, and prompt service.</p>
+          </div>
+          <div class="col-md-5">
+              <img class="featurette-image img-responsive center-block" src="img/SoCalGreenWithBldgs.jpg"
+							     alt="SoCal Commercial & Residential" />
+          </div>
+      </div>
+
+      <hr class="featurette-divider" style="margin-top: 40px; margin-bottom: 40px;">
+
+      <div class="row featurette" style="height: auto">
+          <div class="col-md-7 col-md-push-5">
+              <h2 class="featurette-heading" style="margin-top: 10px;">Ask for a free estimate.<br>
+                  <span class="text-muted">See for yourself.</span></h2>
+              <p class="lead">Find out how owning your own system keeps more of your money where it belongs &mdash; with you!</p>
+          </div>
+          <div class="col-md-5 col-md-pull-7">
+              <img class="featurette-image img-responsive center-block" src="img/PiggyBank.jpg"
+							     height="280px" width="280px" alt="Keep your money" />
+          </div>
+      </div>
+
+      <hr class="featurette-divider" style="margin-top: 40px; margin-bottom: 40px;">
+
+      <div class="row featurette" style="height: auto; display: table-cell; vertical-align: middle">
+          <div class="col-md-6">
+              <h2 class="featurette-heading" style="margin-top: 10px;">We're a full-service shop.<br>
+                  <span class="text-muted">We do it all.</span></h2>
+              <p class="lead">System Sizing<br>
+                  Grid-Tie Approval<br>
+                  Rebate Filing<br>
+                  Building Permit<br>
+                  Installation<br>
+                  Training<br>
+                  Monitoring<br>
+                  Repairs<br>
+                  Financing Available</p>
+          </div>
+          <div class="col-md-6">
+              <img class="featurette-image img-responsive center-block" src="img/Handshake.jpg"
+                   alt="Everything from soup to nuts" height="350px" width="350px" />
+          </div>
+      </div>
+
+      <hr class="featurette-divider">
