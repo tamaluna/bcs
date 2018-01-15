@@ -58,6 +58,9 @@
 .navbar-wrapper .navbar .container {
     width: auto;
 }
+.navbar-nav {
+    padding-top: 18px;
+}
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -77,6 +80,9 @@
 .carousel .item {
     /*height: 500px;*/
     background-color: #ffffff;
+}
+.item {
+    line-height: 1;
 }
 /*.carousel-inner > .item > img {*/
     /*position: absolute;*/
